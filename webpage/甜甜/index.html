@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <link rel="stylesheet" href="./css/index2.css">
+    <script>
+    //rem适配，一开始加载 
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                clientWidth = clientWidth > 750 ? 750 : clientWidth;         
+                clientWidth = clientWidth < 320 ? 320 : clientWidth;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            recalc();
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+
+
+        <header class="header">
+            <p class="title">
+                <span>
+                    每周贡献榜前三分别送靓号
+                </span>
+            </p>
+            <p class="top-number">
+                123456789
+            </p>
+            <p class="desc">
+                本周最佳靓号
+            </p>
+            <p class="other">
+                <span>123456789</span>
+                <span>123456789</span>
+            </p>
+        </header>
+
+
+        <h2 class="ranking-title">本周排名</h2>
+        <div class="ranking">
+            <div class="item">
+                <div class="second">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <p class="name">
+                        像少年啦飞驰
+                    </p>
+                    <p class="grade">
+                        9999
+                    </p>
+                    <p class="user-number">
+                        甜甜号：<span>8553502</span>
+                    </p>
+                </div>
+                <div class="first active">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <p class="name">
+                        像少年啦飞驰
+                    </p>
+                    <p class="grade">
+                        100万
+                    </p>
+                    <p class="user-number">
+                        甜甜号：<span>8553502</span>
+                    </p>
+                </div>
+                <div class="third">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <p class="name">
+                        像少年啦飞驰
+                    </p>
+                    <p class="grade">
+                        9999
+                    </p>
+                    <p class="user-number">
+                        甜甜号：<span>8553502</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="user-show">
+            <div class="user-item">
+                <div class="item-left">
+                    5
+                </div>
+                <div class="item-right">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="tiantian">
+                            <p>
+                                甜甜语音
+                            </p>
+                            <p>
+                                甜甜号:8553502
+                            </p>
+                        </div>
+                        <div class="grade">
+                            <span>2000</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="user-item">
+                <div class="item-left">
+                    5
+                </div>
+                <div class="item-right">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="tiantian">
+                            <p>
+                                甜甜语音
+                            </p>
+                            <p>
+                                甜甜号:8553502
+                            </p>
+                        </div>
+                        <div class="grade">
+                            <span>2000</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="user-item">
+                <div class="item-left">
+                    5
+                </div>
+                <div class="item-right">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="tiantian">
+                            <p>
+                                甜甜语音
+                            </p>
+                            <p>
+                                甜甜号:8553502
+                            </p>
+                        </div>
+                        <div class="grade">
+                            <span>2000</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="user-item">
+                <div class="item-left">
+                    5
+                </div>
+                <div class="item-right">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="tiantian">
+                            <p>
+                                甜甜语音
+                            </p>
+                            <p>
+                                甜甜号:8553502
+                            </p>
+                        </div>
+                        <div class="grade">
+                            <span>2000</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="user-item">
+                <div class="item-left">
+                    5
+                </div>
+                <div class="item-right">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="tiantian">
+                            <p>
+                                甜甜语音
+                            </p>
+                            <p>
+                                甜甜号:8553502
+                            </p>
+                        </div>
+                        <div class="grade">
+                            <span>2000</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="rule-title">活动规则</h2>
+        <div class="rule-detail">
+            <div class="content">
+                    <p>
+                            <span>01</span>     靓号每周一上午12点前给获得者自动发放
+                    </p>
+                    <p>
+                            <span>01</span>     靓号每周一上午12点前给获得者自动发放
+                    </p>
+                    <p>
+                            <span>01</span>     靓号每周一上午12点前给获得者自动发放
+                    </p>
+                    <p>
+                            <span>01</span>     靓号每周一上午12点前给获得者自动发放
+                    </p><p>
+                            <span>01</span>     靓号每周一上午12点前给获得者自动发放
+                    </p>
+                    <p>
+                            <span>01</span>     靓号每周一上午12点前给获得者自动发放
+                    </p>
+                   
+            </div>
+               
+                <!-- 02  活动评选时间为每周一0点至周日24点
+                03  获得一次靓号后，再次获奖可选择替换或放弃
+                04 
+                05  本活动解释权归甜甜语音团队所有 -->
+                
+        </div>
+    </div>
+</body>
+
+</html>
